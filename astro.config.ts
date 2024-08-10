@@ -49,7 +49,7 @@ export default defineConfig({
 	site: "https://dignifiedalpaca.github.io",
 	vite: {
 	  ssr: {
-      noExternal: ['cheerio']
+      noExternal: ['cheerio'],
 		},
 		optimizeDeps: {
 			exclude: ["@resvg/resvg-js"],
