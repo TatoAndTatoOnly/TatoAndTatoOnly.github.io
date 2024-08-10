@@ -48,6 +48,9 @@ export default defineConfig({
 	// ! Please remember to replace the following site property with your own domain
 	site: "https://dignifiedalpaca.github.io",
 	vite: {
+	  ssr: {
+      noExternal: ['cheerio']
+		},
 		optimizeDeps: {
 			exclude: ["@resvg/resvg-js"],
 		},
