@@ -50,7 +50,7 @@ export default defineConfig({
 	vite: {
 	  build: {
 			rollupOptions: {
-			  external: ["astro-icon"],
+			  external: ["astro-icon", "cheerio"],
 			},
 		},
 	  ssr: {
