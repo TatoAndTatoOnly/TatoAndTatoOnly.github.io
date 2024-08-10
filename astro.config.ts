@@ -3,7 +3,7 @@ import sitemap from "@astrojs/sitemap";
 import tailwind from "@astrojs/tailwind";
 import { defineConfig } from "astro/config";
 import expressiveCode from "astro-expressive-code";
-//import icon from "astro-icon";
+import icon from "astro-icon";
 import fs from "fs";
 import rehypeExternalLinks from "rehype-external-links";
 import remarkUnwrapImages from "remark-unwrap-images";
@@ -48,6 +48,11 @@ export default defineConfig({
 	// ! Please remember to replace the following site property with your own domain
 	site: "https://dignifiedalpaca.github.io",
 	vite: {
+	  build: {
+			rollupOptions: {
+			  external: ["astro-icon"],
+			},
+		},
 	  ssr: {
       noExternal: ["cheerio", "iconify", "@iconify"],
 		},
