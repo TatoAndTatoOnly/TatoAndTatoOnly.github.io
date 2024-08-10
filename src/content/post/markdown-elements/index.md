@@ -98,12 +98,12 @@ Sample text here...
 
 Syntax highlighting
 
-```js
-var foo = function (bar) {
-	return bar++;
-};
+```gleam
+import gleam/io
 
-console.log(foo(5));
+pub fn main() {
+  io.debug("hello, world!")
+}
 ```
 
 ### Expressive code examples
@@ -111,13 +111,13 @@ console.log(foo(5));
 Adding a title
 
 ```js title="file.js"
-console.log("Title example");
+console.log("title example");
 ```
 
 A bash terminal
 
 ```bash
-echo "A base terminal example"
+echo "a base terminal example"
 ```
 
 Highlighting code lines
