@@ -2,6 +2,7 @@
 dist/
 .output/
 
+!node_modules/@iconify/tools/lib/svg/**
 # dependencies
 node_modules/
 # but not one weird hack
