@@ -6,6 +6,7 @@ dist/
 node_modules/
 # but not one weird hack
 !node_modules/@iconify/tools/lib/svg/**
+!node_modules/@iconify/tools/lib/svg
 
 # logs
 npm-debug.log*
