@@ -2,7 +2,7 @@
 import type { WebmentionsChildren } from "@/types";
 
 import { Image } from "astro:assets";
-import { Icon } from "astro-icon/components";
+//import { Icon } from "astro-icon/components";
 
 interface Props {
 	mentions: WebmentionsChildren[];
@@ -17,7 +17,7 @@ const comments = mentions.filter(
 );
 
 /**
- ! show a link to the mention 
+ ! show a link to the mention
 
  */
 ---
@@ -71,12 +71,12 @@ const comments = mentions.filter(
 									<span class="hidden" id="cmt-source">
 										Vist the source of this webmention
 									</span>
-									<Icon
+									<!-- <Icon
 										aria-hidden="true"
 										class="h-5 w-5"
 										focusable="false"
 										name="mdi:open-in-new"
-									/>
+									/> -->
 								</a>
 							</div>
 							<p class="mb-0 mt-1 break-words [word-break:break-word]">{mention.content?.text}</p>
