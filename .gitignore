@@ -2,7 +2,6 @@
 dist/
 .output/
 
-!node_modules/@iconify/tools/lib/svg/**
 # dependencies
 node_modules/
 
