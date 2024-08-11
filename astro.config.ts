@@ -54,7 +54,7 @@ export default defineConfig({
 		// 	},
 		// },
 	  ssr: {
-      noExternal: ["cheerio", "iconify", "@iconify", "astro-icon"],
+      noExternal: true,
 		},
 		optimizeDeps: {
 			exclude: ["@resvg/resvg-js"],
