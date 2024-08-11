@@ -48,13 +48,13 @@ export default defineConfig({
 	// ! Please remember to replace the following site property with your own domain
 	site: "https://dignifiedalpaca.github.io",
 	vite: {
-	  build: {
-			rollupOptions: {
-			  external: ["astro-icon"],
-			},
-		},
+	 //  build: {
+		// 	rollupOptions: {
+		// 	  external: ["astro-icon"],
+		// 	},
+		// },
 	  ssr: {
-      noExternal: ["cheerio", "iconify", "@iconify"],
+      noExternal: ["cheerio", "iconify", "@iconify", "astro-icon"],
 		},
 		optimizeDeps: {
 			exclude: ["@resvg/resvg-js"],
