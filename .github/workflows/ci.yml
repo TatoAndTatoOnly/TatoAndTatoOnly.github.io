@@ -42,9 +42,6 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pnpm-store-
 
-      - name: clean
-        run: rm -rf node_modules
-
       - name: Install dependencies
         run: pnpm install
 
